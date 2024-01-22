@@ -9,7 +9,7 @@ function Footer() {
            
             <span >
                 <Navbar  className={styles.footer}>
-                    <Navbar.Brand href="/home" className={styles.Brand}>MailMate</Navbar.Brand>
+                    <Navbar.Brand href="/home" className={styles.Brand}>TODO SET</Navbar.Brand>
                     <Nav className="mr-auto">
                         <Nav.Link href="/home">Youtube</Nav.Link>
                         <Nav.Link href="/features">Twitter</Nav.Link>

@@ -1,10 +1,6 @@
 
 import Header from "@/Components/Header/Header";
-import Home from "@/Components/Pages/Home";
-import SignUp from "@/Components/Pages/SignUp";
-import Login from "@/Components/Pages/Login";
-import Logout from "@/Components/Pages/Logout";
-import ErrorPage from "@/Components/Pages/ErrorPage";
+import styles from './Home.module.css'
 
 function App() {
 
@@ -12,37 +8,10 @@ function App() {
   //console.log("app auth",auth)
 
   return (
-    <Fragment>
-      <Header />
-      <Switch>
-      <Route path='/home'>
-          <Home />
-        </Route>
-        <Route path='/signup'>
-          <SignUp />
-        </Route>
-        <Route path='/login'>
-          <Login />
-        </Route>
-        <Route path='/todo-list'>
-        {/* {auth.isLoggedIn ? <Welcome />: <Redirect to='/login'/>} */}
-        <Welcome />
-        </Route>
-        <Route path='/compose-mail'>
-        {auth.isLoggedIn ? <ComposeMail />: <Redirect to='/login'/>}
-          
-        </Route>
-       
-        <Route path='/logout'>
-          <Logout />
-        </Route>
-        <Route path="*">
-          <ErrorPage/>
-        </Route>
-      </Switch>
-
-      <Footer />
-    </Fragment>
+    <div className={styles.container}>
+     <h1>TODO SET</h1>
+    <p>The Todo List App streamlines task management, offering a user-friendly interface for creating, editing, and prioritizing daily tasks. Users can set due dates, receive reminders, and mark tasks as completed, fostering efficient time management. The app's customization options allow for personalized organization, while synchronization across devices ensures accessibility and consistency. With a focus on data security and seamless navigation, the Todo List App provides a versatile and indispensable tool for individuals seeking a systematic approach to productivity.The Todo List App streamlines task management, offering a user-friendly interface for creating, editing, and prioritizing daily tasks. Users can set due dates, receive reminders, and mark tasks as completed, fostering efficient time management. The app's customization options allow for personalized organization, while synchronization across devices ensures accessibility and consistency. With a focus on data security and seamless navigation, the Todo List App provides a versatile and indispensable tool for individuals seeking a systematic approach to productivity.</p>
+    </div>
 
   );
 }
